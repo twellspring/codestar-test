@@ -11,11 +11,11 @@ class TestHandlerCase(unittest.TestCase):
         self.assertEqual(result['headers']['Content-Type'], 'application/json')
         self.assertIn('Hello World', result['body'])
 
-    def test_dummy(self):
-        print("testing dummy.")
-        result = index.handler(None, None)
-        print(result)
-        self.assertEqual(result['statusCode'], 404)
+    # def test_dummy(self):
+    #     print("testing dummy.")
+    #     result = index.handler(None, None)
+    #     print(result)
+    #     self.assertEqual(result['statusCode'], 404)
 
 
 if __name__ == '__main__':
